@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "Stade de France",
+    "city": "Paris",
+    "imageUrl": "http://stadiumdb.com/pictures/stadiums/fra/stade_de_france/stade_de_france02.jpg",
+    "coords": {
+      "lat": "48.9238365",
+      "long": "2.3586623"
+    },
+    "capacity": "81,338"
+  }
+]

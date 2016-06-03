@@ -1,0 +1,16 @@
+{
+  "name": "euro2016",
+  "version": "1.0.0",
+  "description": "A wallchart for Euro 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Forbes Gray <fnbg75@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {}
+}

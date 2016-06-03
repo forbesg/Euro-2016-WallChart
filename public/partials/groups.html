@@ -1,0 +1,93 @@
+<div class="col-xs-12">
+  <header class="row">
+    <div class="logo text-center">
+      <img src="images/mascot.jpg" alt="Euro 2016 Mascot" />
+
+    </div>
+  </header>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Group Stage</h2>
+    <h4>{{title}}</h4>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="(groupName, group) in groups">
+
+    <div class="group-table-container">
+      <header>
+        <h4><b><a ng-href="#/groups/{{groupName}}" data-title="View {{groupName}} Fixtures">{{groupName}} - <i class="fa fa-link" aria-hidden="true"></i></a></b></h4>
+      </header>
+      <table class="table">
+        <thead>
+          <tr>
+            <td class="first-column">
+              Country
+            </td>
+            <td class="text-center">
+              Pld
+            </td>
+            <td class="text-center">
+              W
+            </td>
+            <td class="text-center">
+              D
+            </td>
+            <td class="text-center">
+              L
+            </td>
+            <td class="text-center hidden-xs">
+              GF
+            </td>
+            <td class="text-center hidden-xs">
+              GA
+            </td>
+            <td class="text-center">
+              GD
+            </td>
+            <td class="text-center">
+              Pts
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="team in group.group | orderBy: ['-table.points', '-table.goalsdiff']">
+            <td class="first-column">
+              <div class="flag-container">
+                <img ng-src="{{team.flag}}" alt="{{team.country}} Flag" class="flag" />
+              </div>
+              <b>{{team.country}}</b>
+            </td>
+            <td class="text-center">
+              {{team.table.played}}
+            </td>
+            <td class="text-center">
+              {{team.table.won}}
+            </td>
+            <td class="text-center">
+              {{team.table.drawn}}
+            </td>
+            <td class="text-center">
+              {{team.table.lost}}
+            </td>
+            <td class="text-center hidden-xs">
+              {{team.table.goalsfor}}
+            </td>
+            <td class="text-center hidden-xs">
+              {{team.table.goalsagainst}}
+            </td>
+            <td class="text-center">
+              {{team.table.goalsdiff}}
+            </td>
+            <td class="text-center">
+              {{team.table.points}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<ul>
+  <li ng-repeat="team in local.teams">{{team.country}}</li>
+</ul>

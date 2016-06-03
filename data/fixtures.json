@@ -1,0 +1,448 @@
+{
+  "fixtures": {
+    "Group A": [
+      {
+        "date": "1465588800",
+        "stadium": "Stade de France",
+        "city": "Paris",
+        "hometeam": "France",
+        "awayteam": "Romania",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465653600",
+        "stadium": "Stade Felix Bollaert-Delelis",
+        "city": "Lens",
+        "hometeam": "Albania",
+        "awayteam": "Switzerland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466010000",
+        "stadium": "Parc des Princes",
+        "city": "Paris",
+        "hometeam": "Romania",
+        "awayteam": "Switzerland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466020800",
+        "stadium": "Stade Vélodrome",
+        "city": "Marseille",
+        "hometeam": "France",
+        "awayteam": "Albania",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466366400",
+        "stadium": "Parc OL",
+        "city": "Lyon",
+        "hometeam": "Romania",
+        "awayteam": "Albania",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466366400",
+        "stadium": "Stade Pierre-Mauroy",
+        "city": "Lille",
+        "hometeam": "Switzerland",
+        "awayteam": "France",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ],
+    "Group B": [
+      {
+        "date": "1465664400",
+        "stadium": "Matmut Atlantique",
+        "city": "Bordeaux",
+        "hometeam": "Wales",
+        "awayteam": "Slovakia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465675200",
+        "stadium": "Stade Vélodrome",
+        "city": "Marseille",
+        "hometeam": "England",
+        "awayteam": "Russia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465999200",
+        "stadium": "Stade Pierre-Mauroy",
+        "city": "Lille",
+        "hometeam": "Russia",
+        "awayteam": "Slovakia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466085600",
+        "stadium": "Stade Felix Bollaert-Delelis",
+        "city": "Lens",
+        "hometeam": "England",
+        "awayteam": "Wales",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466452800",
+        "stadium": "Stadium Municipal",
+        "city": "Toulouse",
+        "hometeam": "Wales",
+        "awayteam": "Russia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466452800",
+        "stadium": "Stade Geoffroy-Guichard",
+        "city": "Saint-Étienne",
+        "hometeam": "Slovakia",
+        "awayteam": "England",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ],
+    "Group C": [
+      {
+        "date": "1465750800",
+        "stadium": "Allianz Riviera",
+        "city": "Nice",
+        "hometeam": "Poland",
+        "awayteam": "N Ireland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465761600",
+        "stadium": "Stade Pierre-Mauroy",
+        "city": "Lille",
+        "hometeam": "Germany",
+        "awayteam": "Ukraine",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466096400",
+        "stadium": "Parc OL",
+        "city": "Lyon",
+        "hometeam": "Ukraine",
+        "awayteam": "N Ireland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466107200",
+        "stadium": "Stade de France",
+        "city": "Paris",
+        "hometeam": "Germany",
+        "awayteam": "Poland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466528400",
+        "stadium": "Parc des Princes",
+        "city": "Paris",
+        "hometeam": "N Ireland",
+        "awayteam": "Germany",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466528400",
+        "stadium": "Stade Vélodrome",
+        "city": "Marseille",
+        "hometeam": "Ukraine",
+        "awayteam": "Poland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ],
+    "Group D": [
+      {
+        "date": "1465740000",
+        "stadium": "Parc des Princes",
+        "city": "Paris",
+        "hometeam": "Turkey",
+        "awayteam": "Croatia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465826400",
+        "stadium": "Stadium Municipal",
+        "city": "Toulouse",
+        "hometeam": "Spain",
+        "awayteam": "Czech Rep",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466182800",
+        "stadium": "Stade Geoffroy-Guichard",
+        "city": "Saint-Étienne",
+        "hometeam": "Czech Rep",
+        "awayteam": "Croatia",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466193600",
+        "stadium": "Allianz Riviera",
+        "city": "Nice",
+        "hometeam": "Spain",
+        "awayteam": "Turkey",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466539200",
+        "stadium": "Matmut Atlantique",
+        "city": "Bordeaux",
+        "hometeam": "Croatia",
+        "awayteam": "Spain",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466539200",
+        "stadium": "Stade Felix Bollaert-Delelis",
+        "city": "Lens",
+        "hometeam": "Czech Rep",
+        "awayteam": "Turkey",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ],
+    "Group E": [
+      {
+        "date": "1465837200",
+        "stadium": "Stade de France",
+        "city": "Paris",
+        "hometeam": "Rep of Ireland",
+        "awayteam": "Sweden",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465848000",
+        "stadium": "Parc OL",
+        "city": "Lyon",
+        "hometeam": "Belgium",
+        "awayteam": "Italy",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466172000",
+        "stadium": "Stadium Municipal",
+        "city": "Toulouse",
+        "hometeam": "Italy",
+        "awayteam": "Sweden",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466258400",
+        "stadium": "Matmut Atlantique",
+        "city": "Bordeaux",
+        "hometeam": "Belgium",
+        "awayteam": "Rep of Ireland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466625600",
+        "stadium": "Stade Pierre-Mauroy",
+        "city": "Lille",
+        "hometeam": "Italy",
+        "awayteam": "Rep of Ireland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466625600",
+        "stadium": "Allianz Riviera",
+        "city": "Nice",
+        "hometeam": "Sweden",
+        "awayteam": "Belgium",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ],
+    "Group F": [
+      {
+        "date": "1465923600",
+        "stadium": "Matmut Atlantique",
+        "city": "Bordeaux",
+        "hometeam": "Austria",
+        "awayteam": "Hungary",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1465934400",
+        "stadium": "Stade Geoffroy-Guichard",
+        "city": "Saint-Étienne",
+        "hometeam": "Portugal",
+        "awayteam": "Iceland",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466269200",
+        "stadium": "Stade Vélodrome",
+        "city": "Marseille",
+        "hometeam": "Iceland",
+        "awayteam": "Hungary",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466280000",
+        "stadium": "Parc des Princes",
+        "city": "Paris",
+        "hometeam": "Portugal",
+        "awayteam": "Austria",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466614800",
+        "stadium": "Parc OL",
+        "city": "Lyon",
+        "hometeam": "Hungary",
+        "awayteam": "Portugal",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      },
+      {
+        "date": "1466614800",
+        "stadium": "Stade de France",
+        "city": "Paris",
+        "hometeam": "Iceland",
+        "awayteam": "Austria",
+        "completed": false,
+        "score": {
+          "hometeam": null,
+          "awayteam": null
+        }
+      }
+    ]
+  }
+}

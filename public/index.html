@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Euro 2016 Wallchart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+  	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  	<link rel="manifest" href="/manifest.json">
+  	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  	<meta name="msapplication-TileColor" content="#da532c">
+  	<meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular-animate.min.js"></script>
+  </head>
+  <body ng-app="App" ng-cloak>
+
+    <div class="main-container">
+
+        <noscript>
+          <div class="text-center">
+            <h1>Oh No - You Have JavaScript disabled.</h1>
+            <h2>To get the full Wallchart functionality please enable JavaScript in you Browser</h2>
+          </div>
+        </noscript>
+      <menu-icon class="pull-right"></menu-icon>
+      <div class="col-xs-12">
+        <div ng-view  autoscroll="true">
+
+        </div>
+        <div class="pre-footer">
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="col-xs-12 text-center">
+        <div class="row">
+          <h1>Euro 2016 Wallchart</h1>
+          <div class="time" ng-controller="timeController">
+            <h6><b>Todays Date - {{time | date}}</b></h6>
+          </div>
+          <!-- <menu-icon></menu-icon> -->
+          <nav ng-controller="navController">
+            <ul class="nav">
+              <li><a href="#/">Home</a></li>
+              <li>
+                <a ng-click="showSubNav()" class="show {{show}}">
+                  Groups
+                </a>
+                <ul id="subnav" class="subnav {{show}}">
+                  <li><a href="#/groups">All Groups</a></li>
+                  <li ng-repeat="(group, obj) in groups"><a ng-href="#/groups/{{group}}">{{group}}</a></li>
+                </ul>
+              </li>
+              <li><a href="#/knockout">Knockout</a></li>
+              <li><a href="#/fixtures">Fixtures</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copy">
+        <h6>&copy; 2016 <a href="http://forbesg.github.io/" title="Forbes Gray | Personal Website" target="_blank">Forbes Gray</a></h6>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/factory/groups-factory.js"></script>
+    <script type="text/javascript" src="js/factory/local-storage-factory.js"></script>
+    <script type="text/javascript" src="js/factory/stadium-factory.js"></script>
+    <script type="text/javascript" src="js/factory/google-map-style.js"></script>
+    <script type="text/javascript" src="js/factory/third-place-calc.js"></script>
+    <!-- <script type="text/javascript" src="js/factory/knockout-factory.js"></script> -->
+    <script type="text/javascript" src="js/controllers/home-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/nav-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/group-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/fixtures-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/stadium-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/last-16-controller.js"></script>
+    <script type="text/javascript" src="js/directives/menu-icon.js"></script>
+    <script type="text/javascript" src="js/directives/group-table.js"></script>
+    <script type="text/javascript" src="js/directives/google-map.js"></script>
+    <script type="text/javascript" src="js/directives/fixture-card.js"></script>
+    <script type="text/javascript" src="js/directives/knockout-fixture-card.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN385jBTjkF5rpOShySUzEAX_5b1CdlMg" async defer></script>
+    <!-- <script type="text/javascript">
+      var menu = document.getElementsByTagName('nav')[0];
+      var links = menu.getElementsByTagName('a');
+      for (var i = 0; i < links.length; i += 1) {
+        links[i].addEventListener('click', function (e) {
+          for (var j = 0; j < links.length; j += 1) {
+            links[j].parentNode.className = "";
+          }
+          this.parentNode.className = "active";
+        });
+      }
+    </script> -->
+  </body>
+</html>

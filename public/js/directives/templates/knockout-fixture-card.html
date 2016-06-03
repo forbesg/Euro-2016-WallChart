@@ -1,0 +1,49 @@
+<div ng-class="{played: fixture.completed}" class="fixture-card">
+  <header>
+    <p class="date">
+      {{game || fixture.group}}
+    </p>
+  </header>
+  <div>
+    <p class="time">
+      {{fixture.date |  date:'EEEE d MMMM'}} <br>
+      {{fixture.date |  date:'H:mm'}}
+    </p>
+    <p class="stadium">
+      <a ng-href="#/stadium/{{fixture.stadium.name}}">{{fixture.stadium.name}}, {{fixture.stadium.city}}</a>
+    </p>
+    <p class="teams">
+      <span ng-if="fixture.hometeam.country">
+        <b>{{fixture.hometeam.country}}</b>
+        <input type="text" ng-model="fixture.score.hometeam" ng-change="updateScore(game, fixture)" ng-if="!fixture.completed"/>
+        <span ng-if="fixture.completed">{{ fixture.score.hometeam }}</span>
+      </span>
+      <span ng-if="!fixture.hometeam.country">
+        <b>{{fixture.hometeam}}</b>
+        <input type="text" disabled />
+      </span>
+      v
+      <span ng-if="fixture.awayteam.country">
+        <input type="text" ng-model="fixture.score.awayteam" ng-change="updateScore(game, fixture)" ng-if="!fixture.completed"/>
+        <span ng-if="fixture.completed">{{ fixture.score.awayteam }}</span>
+        <b>{{fixture.awayteam.country}}</b>
+      </span>
+      <span ng-if="!fixture.awayteam.country">
+        <input type="text" disabled />
+        <b>{{fixture.awayteam}}</b>
+      </span>
+    </p>
+  </div>
+  <div id="dialog-container" ng-if="fixture.penalties">
+    <h2>Penalties</h2>
+    <h4>Which team won?</h4>
+    <div class="button-container">
+      <button class="btn btn-primary" ng-click="penaltyUpdate(game, fixture, fixture.hometeam)">{{ fixture.hometeam.country}}</button>
+      <button class="btn btn-primary" ng-click="penaltyUpdate(game, fixture, fixture.awayteam)">{{ fixture.awayteam.country}}</button>
+    </div>
+    <br>
+    <div>
+      <button class="btn btn-warning btn-xs" ng-click="cancelPenaltyUpdate(fixture)">Cancel</button>
+    </div>
+  </div>
+</div>

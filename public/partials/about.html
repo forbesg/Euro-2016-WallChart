@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>The About Page</h2>
+  <button type="button" name="button" class="btn btn-default" ng-click="confirmReset()">Reset All Stored Data</button>
+  <div class="model-background" ng-if="confirmationRequired"></div>
+  <div class="delete-confirmation" ng-if="confirmationRequired" >
+    <div class="">
+      <h4><strong>Data Deletion | Confirmation</strong></h4>
+      <p>
+        You have requested to delete all of your stored data.
+      </p>
+      <p>
+        This cannot be undone.
+      </p>
+      <p>
+        Are you sure you want to delete
+      </p>
+      <div class="buttons">
+        <button type="button" class="btn btn-primary" ng-click="closeConfirmation()">Cancel</button>
+        <button type="button" class="btn btn-warning" ng-click="confirmDelete()">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>

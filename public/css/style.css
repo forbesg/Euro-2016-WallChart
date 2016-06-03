@@ -1,0 +1,604 @@
+
+body {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+a:focus {
+  outline: none;
+}
+header.main-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.logo.text-center {
+  padding: 20px 0;
+}
+.logo img {
+  max-width: 300px;
+}
+.time h6 {
+  color: #dadada;
+}
+.sidebar {
+  color: #fff;
+  background-color:#2A425D;
+  width: 260px;
+  border-right: 1px solid #8E8E8E;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:0;
+}
+.sidebar h1 {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+}
+nav .nav>li>a {
+  padding: 10px 0;
+  color: #dadada;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: font-weight 0.3s, background-color .5s;
+}
+nav .nav>li.active {
+  background-color: #2C334C;
+}
+nav .nav>li.active>a {
+  color: #fff;
+  font-weight: bold;
+}
+nav .nav>li>a:hover, nav .nav>li>a:focus {
+  background-color: #2C334C;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: font-weight 0.3s, background-color .5s;
+}
+/** Groups SubNav CSS **/
+a.show {
+  cursor: pointer;
+}
+a.show::after {
+  content: "";
+  background-image: url('../images/chevron.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:20px;
+  height: 20px;
+  color: white:;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+a.show.true::after {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.animate.ng-enter,
+.animate.ng-leave
+{
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+}
+
+.animate.ng-leave.ng-leave-active,
+.animate.ng-enter {
+    opacity: 0;
+    height: 0px;
+}
+
+.animate.ng-enter.animate.ng-enter-active,
+.animate.ng-leave {
+    opacity: 1;
+    height: 314px;
+}
+ul.subnav.true {
+    height: 294px;
+}
+ul.subnav {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+}
+nav ul li ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li ul li a {
+  display: block;
+  padding: 10px 40px 10px 0;
+  text-align: right;
+  color: #fff;
+  transition: font-weight 0.3s, padding .5s;
+}
+nav ul li ul li a:hover ,nav ul li ul li a:focus {
+  background-color: #2C334C;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav ul li ul li a:hover {
+  padding-right: 55px;
+}
+.main-container {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left:0;
+  right:0;
+  min-height: 100%;
+  z-index:1;
+  padding-bottom: 30px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+.main-container.open {
+  -webkit-transform: translate(-260px);
+  -moz-transform: translate(-260px);
+  transform: translate(-260px);
+}
+div#menu-icon {
+  font-size: 30px;
+  padding: 2px;
+  text-align: center;
+  width: 50px;
+}
+div#menu-icon i:hover  {
+  cursor: pointer;
+}
+/*@media (min-width: 768px) {*/
+@media (min-width: 996px) {
+  .main-container {
+    bottom: 0;
+  }
+  .sidebar {
+    left:0;
+  }
+  .sidebar h1 {
+    margin: 30px 0;
+    /*left: 0;
+    right:auto;*/
+    font-size: 39px;
+  }
+  nav {
+    height: auto;
+    overflow: hidden;
+  }
+  nav .nav>li>a {
+    padding: 20px 0;
+  }
+  nav .nav>li>a::before {
+    content: "";
+    background-image: url('../images/nervous-football.gif');
+    background-size: contain;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: -60px;
+    width: 40px;
+    opacity:0;
+    -webkit-transition: left .5s, opacity .5s;
+    -moz-transition: left .5s, opacity .5s;
+    transition: left .5s, opacity .5s;
+  }
+  nav .nav>li.active>a::before {
+    top: 10px;
+    left: 30px;
+    opacity:1;
+  }
+  nav .nav>li>a.show::after {
+    top: 20px;
+  }
+  .main-container {
+    margin-left: 260px;
+  }
+}
+
+
+
+/** Homepage Styles **/
+.banner {
+  position: relative;
+  /*background-color: #395779;*/
+  padding: 20px 0;
+}
+.banner img {
+  width: 100%;
+}
+.banner .to-do {
+  position: absolute;
+  background-color: rgba(218, 218, 218, 0.73);
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/** About Page Styles **/
+.model-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.model-background.ng-enter {
+  opacity: 0;
+}
+.modal-background.ng-enter-active {
+  opacity: 1;
+}
+.model-background.ng-leave {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+}
+.modal-background.ng-leave-active {
+  opacity: 0;
+}
+.delete-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  margin-left: -140px;
+  margin-top: -125px;
+  height: 250px;
+  padding: 10px;
+  background-color: #2C618E;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #000;
+  color: white;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.delete-confirmation.ng-enter {
+  top: -1000px;
+  opacity: 0;
+}
+.delete-confirmation.ng-enter.ng-enter-active {
+  opacity: 0;
+}
+.delete-confirmation.ng-leave {
+  opacity: 1;
+}
+.delete-confirmation.ng-leave-active {
+  top: -1000px;
+  opacity: 0;
+}
+.delete-confirmation .buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.toast {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #791414;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+  bottom: 10px;
+  right: 10px;
+  line-height: 46px;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.toast.ng-enter {
+  -webkit-transform: translateX(-300px);
+  -moz-transform: translateX(-300px);
+  transform: translateX(-300px);
+  opacity: 0;
+}
+.toast.ng-enter-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.toast.ng-leave {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.toast.ng-leave-active {
+  -webkit-transform: translateX(-300px);
+  -moz-transform: translateX(-300px);
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+
+/** Table Styles  **/
+.group-table-container {
+  margin: 0;
+  height: 300px;
+}
+.group-table-container header, header.fixture-header {
+  background-color: #4165AB;
+  padding: 5px 10px;
+  color: #fff;
+}
+.group-table-container h4 a {
+  color: #fff;
+  position: relative;
+}
+.group-table-container h4 a:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  width: 150px;
+  top: -40px;
+  left: 50px;
+  background-color: #3A3A3A;
+  box-shadow: 0px 0px 3px #000000;
+  color: #FFF;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.table {
+  font-size: 12px;
+}
+.flag-container {
+  display: inline-block;
+  width: 30px;
+  padding-right:10px;
+}
+td.first-column {
+  width: 180px;
+}
+
+/** Fixture Styles **/
+
+@media (min-width: 768px) {
+  .group-container {
+    padding: 0 10px;
+  }
+}
+
+.fixture-card {
+  position:relative;
+  font-size: 12px;
+  margin: 10px 0;
+  height: 160px;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.fixture-card.ng-enter {
+  opacity: 0;
+}
+.fixture-card.ng-enter-active {
+  opacity: 1;
+}
+.fixture-card header {
+  padding: 10px 0;
+}
+.fixture-card.played {
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #4165AB;
+}
+.fixture-card.played p.date {
+  /*background-color: #013E81;*/
+  /*color: #fff;*/
+}
+.fixture-card.played header {
+  background-color: #4165AB;
+  color: #fff;
+}
+.fixture-card p.date {
+  text-transform: uppercase;
+  color: #4165AB;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.fixture-card.played p.date {
+  /*background-color: #013E81;*/
+  color: #fff;
+}
+.fixture-card p.time {
+  font-weight: bold;
+  font-size: 12px;
+}
+.teams input {
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+.fixture-card.played .teams span {
+  /*font-size: 16px;*/
+  font-weight: bolder;
+  padding: 0 5px;
+}
+.fixture-card.played .teams b {
+  color:  #1967be;
+}
+div#dialog-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -125px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 200px;
+  background-color: #FFF;
+  color: #212121;
+  padding: 0 10px;
+  border: 2px solid #2A425D;
+  z-index: 9;
+  box-shadow: 0 0 3px #616161;
+}
+div#dialog-container::before {
+  content: "";
+  background-image: url('../images/arrow-up.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+@media (min-width: 996px) {
+  .quarters-container {
+    padding: 80px 0;
+  }
+  .semis-container {
+    padding: 250px 0;
+  }
+  .finals-container {
+    padding: 590px 0;
+  }
+}
+
+.daysToGo {
+  background-color: #2394CC;
+  color: #B71D26;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 20px auto;
+  font-size: 100px;
+  line-height: 190px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.daysToGo p {
+  margin: 0;
+}
+
+.stadium-image img {
+  width:100%;
+  border: 3px solid #29357D;
+}
+.stadium-info h2 {
+  font-weight: bolder;
+}
+.stadium-info h4 {
+  font-weight: 500;
+}
+
+/** Map Styles **/
+.stadium-view-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.stadium-info-container {
+  position: absolute;
+  top:600px;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+div#finsHooseLabel {
+
+}
+div#finsHooseLabel div {
+  width:80px;
+}
+div#finsHooseLabel img {
+  border: 1px solid #272A4A;
+  max-width: 80px;
+}
+div#finsHooseLabel p {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+google-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#map {
+  height: 600px;
+  /*margin-top: 20px;*/
+}
+@media (min-width: 996px) {
+  .stadium-view-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .stadium-info-container {
+    top:initial;
+    bottom: 30px;
+    padding: 10px 0;
+    background-color: rgba(255,255,255,0.9);
+  }
+  .stadium-image img {
+    max-height:220px;
+    width: auto;
+    border: 3px solid #29357D;
+  }
+  #map {
+    height: 100%;
+    /*margin-top: 20px;*/
+  }
+}
+
+/** Footer Styles **/
+.pre-footer { /* Required to pad out absolute main container from footer */
+  clear: both;
+  height: 50px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+  height: 30px;
+  text-align: center;
+  background-color: #131313;
+  color: #fff;
+  z-index: 4;
+}
+footer h6 {
+  line-height: 30px;
+  margin: 0;
+  color: #fff;
+}
+footer h6 a {
+  color: #fff;
+}
+footer h6 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
