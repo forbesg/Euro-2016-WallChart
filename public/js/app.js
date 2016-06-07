@@ -28,6 +28,10 @@
         templateUrl: 'partials/stadium-view.html',
         controller: 'stadiumController'
       })
+      .when('/stadium', {
+        templateUrl: 'partials/stadia.html',
+        controller: 'stadiaController'
+      })
       .otherwise({
         redirectTo: '/'
       })

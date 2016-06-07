@@ -549,6 +549,7 @@ google-map {
   height: 600px;
   /*margin-top: 20px;*/
 }
+
 @media (min-width: 996px) {
   .stadium-view-container {
     position: fixed;
