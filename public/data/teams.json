@@ -308,7 +308,10 @@
       "country": "Belgium",
       "seed": 5,
       "group": "E",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/23px-Flag_of_Belgium_%28civil%29.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/23px-Flag_of_Belgium_%28civil%29.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
