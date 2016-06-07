@@ -6,11 +6,6 @@
         console.log('Local Storage is available');
       });
 
-      $scope.todos = [
-        'Style Fixtures Tab - make sure it works in knockout stages',
-        'Page for all stadia allowing zoom in for info from map'
-      ];
-
       $scope.development = true;
 
       $scope.confirmationRequired = false;

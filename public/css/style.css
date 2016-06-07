@@ -549,7 +549,12 @@ google-map {
   height: 600px;
   /*margin-top: 20px;*/
 }
-
+.winners-container img {
+  margin: auto;
+}
+.winners-flag-container {
+  margin: 50px 0;
+}
 @media (min-width: 996px) {
   .stadium-view-container {
     position: fixed;

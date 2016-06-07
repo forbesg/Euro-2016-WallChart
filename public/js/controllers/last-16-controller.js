@@ -1,12 +1,11 @@
 (function () {
   'use strict';
   angular.module('App')
-    .controller('lastSixteenController', ['$scope', 'localStorageFactory', function ($scope, localStorageFactory) {
+    .controller('lastSixteenController', ['$scope', 'localStorageFactory', '$location', function ($scope, localStorageFactory, $location) {
       var knockoutData = localStorageFactory.getLocalStorage();
       var winningTeam,
           game,
           fixture;
-      console.log(knockoutData)
       $scope.fixtures = knockoutData.last16.last16;
       $scope.quarters = knockoutData.last16.quarters;
       $scope.semis = knockoutData.last16.semis;
@@ -23,6 +22,15 @@
         if (fixture.score.hometeam === fixture.score.awayteam) {
           fixture.penalties = true;
         }
+      }
+
+      // Handle the winners in the final
+      function victors (team) {
+        console.log('And the winning team is ' + team.country + '!');
+        knockoutData.winners = team;
+        console.log(knockoutData);
+        localStorage.setItem('euroData', JSON.stringify(knockoutData));
+        $location.path('/winners');
       }
 
       function progressTeam(fixture, game, winningTeam) {
@@ -85,7 +93,8 @@
             fixture.completed = true;
             break;
           case 'final':
-            console.log('its the final and the winner is ' + winningTeam.country);
+            fixture.completed = true;
+            victors(winningTeam);
             break;
           default:
             console.log('fallen all the way through the switch statement');

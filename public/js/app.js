@@ -32,6 +32,10 @@
         templateUrl: 'partials/stadia.html',
         controller: 'stadiaController'
       })
+      .when('/winners', {
+        templateUrl: 'partials/winners.html',
+        controller: 'winnersController'
+      })
       .otherwise({
         redirectTo: '/'
       })

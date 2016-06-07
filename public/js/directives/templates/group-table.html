@@ -38,7 +38,7 @@
       <tr ng-repeat="team in group | orderBy: ['-table.points', '-table.goalsdiff']">
         <td class="first-column">
           <div class="flag-container">
-            <img ng-src="{{team.flag}}" alt="{{team.country}} Flag" class="flag" />
+            <img ng-src="{{team.flag.thumbnail}}" alt="{{team.country}} Flag" class="flag" />
           </div>
           <b>{{team.country}}</b>
         </td>

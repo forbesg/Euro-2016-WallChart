@@ -17,7 +17,7 @@
       // var todaysDate = new Date(1466258400000);
       // var firstDay = new Date(1465556301000);
       // var todaysDate = firstDay;
-      var todaysDate = new Date(1466899200000);
+      // var todaysDate = new Date(1466899200000);
       console.log(JSON.parse(localStorage.getItem('euroData')).last16.last16);
       if (todaysDate > 1466726400000) {
         $scope.knockout = true;

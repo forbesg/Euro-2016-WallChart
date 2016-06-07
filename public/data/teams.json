@@ -4,7 +4,10 @@
       "country": "France",
       "seed": 8,
       "group": "A",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -20,7 +23,10 @@
       "country": "Romania",
       "seed": 18,
       "group": "A",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/23px-Flag_of_Romania.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/23px-Flag_of_Romania.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -36,7 +42,10 @@
       "country": "Albania",
       "seed": 31,
       "group": "A",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/21px-Flag_of_Albania.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/21px-Flag_of_Albania.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -52,7 +61,10 @@
       "country": "Switzerland",
       "seed": 10,
       "group": "A",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/16px-Flag_of_Switzerland.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/16px-Flag_of_Switzerland.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -68,7 +80,10 @@
       "country": "England",
       "seed": 3,
       "group": "B",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/23px-Flag_of_England.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/23px-Flag_of_England.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -84,7 +99,10 @@
       "country": "Russia",
       "seed": 9,
       "group": "B",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/23px-Flag_of_Russia.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/23px-Flag_of_Russia.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -100,7 +118,10 @@
       "country": "Wales",
       "seed": 28,
       "group": "B",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Wales_2.svg/23px-Flag_of_Wales_2.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Wales_2.svg/23px-Flag_of_Wales_2.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Wales_2.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -116,7 +137,10 @@
       "country": "Slovakia",
       "seed": 19,
       "group": "B",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/23px-Flag_of_Slovakia.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/23px-Flag_of_Slovakia.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -132,7 +156,10 @@
       "country": "Germany",
       "seed": 1,
       "group": "C",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -148,7 +175,10 @@
       "country": "Ukraine",
       "seed": 14,
       "group": "C",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/23px-Flag_of_Ukraine.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/23px-Flag_of_Ukraine.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -164,7 +194,10 @@
       "country": "Poland",
       "seed": 17,
       "group": "C",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -180,7 +213,10 @@
       "country": "N Ireland",
       "seed": 33,
       "group": "C",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Northern_Ireland.svg/23px-Flag_of_Northern_Ireland.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Northern_Ireland.svg/23px-Flag_of_Northern_Ireland.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Northern_Ireland.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -196,7 +232,10 @@
       "country": "Spain",
       "seed": 2,
       "group": "D",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/23px-Flag_of_Spain.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/23px-Flag_of_Spain.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -212,7 +251,10 @@
       "country": "Czech Rep",
       "seed": 15,
       "group": "D",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/23px-Flag_of_the_Czech_Republic.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/23px-Flag_of_the_Czech_Republic.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -228,7 +270,10 @@
       "country": "Turkey",
       "seed": 22,
       "group": "D",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/23px-Flag_of_Turkey.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/23px-Flag_of_Turkey.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -244,7 +289,10 @@
       "country": "Croatia",
       "seed": 12,
       "group": "D",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/23px-Flag_of_Croatia.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/23px-Flag_of_Croatia.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -276,7 +324,10 @@
       "country": "Italy",
       "seed": 6,
       "group": "E",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -292,7 +343,10 @@
       "country": "Rep of Ireland",
       "seed": 23,
       "group": "E",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/23px-Flag_of_Ireland.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/23px-Flag_of_Ireland.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -308,7 +362,10 @@
       "country": "Sweden",
       "seed": 16,
       "group": "E",
-      "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/23px-Flag_of_Sweden.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/23px-Flag_of_Sweden.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -324,7 +381,10 @@
       "country": "Portugal",
       "seed": 4,
       "group": "F",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/23px-Flag_of_Portugal.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/23px-Flag_of_Portugal.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -340,7 +400,10 @@
       "country": "Iceland",
       "seed": 27,
       "group": "F",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/21px-Flag_of_Iceland.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/21px-Flag_of_Iceland.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -356,7 +419,10 @@
       "country": "Austria",
       "seed": 11,
       "group": "F",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/23px-Flag_of_Austria.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/23px-Flag_of_Austria.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
@@ -372,7 +438,10 @@
       "country": "Hungary",
       "seed": 20,
       "group": "F",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/23px-Flag_of_Hungary.svg.png",
+      "flag": {
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/23px-Flag_of_Hungary.svg.png",
+        "full": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"
+      },
       "table": {
         "played": 0,
         "won": 0,
