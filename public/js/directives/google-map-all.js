@@ -4,9 +4,9 @@
       return {
         restrict: 'E',
         templateUrl: 'js/directives/templates/google-map.html',
-        scope: {
-          stadiumArray:'=data'
-        },
+        // scope: {
+        //   stadiumArray:'=data'
+        // },
         link: function (scope, element) {
           var center = {
                 lat: parseInt(46.956859, 10),
