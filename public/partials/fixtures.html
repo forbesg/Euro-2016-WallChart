@@ -6,10 +6,13 @@
   </header>
 </div>
 <div ng-if="countdown" class="row text-center">
-  <div class="video-container">
-    <video src="images/Euro_2016.webm" autoplay controls style="max-width: 100%;"></video>
-  </div>
+
   <div class="col-xs-12">
+    <div class="video-container">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/UkpjphDhrqs" class="embed-responsive-item"></iframe>
+      </div>
+    </div>
     <h1>Patience, Patience, Patience.</h1>
     <h3>We are getting closer to the start of Euro 2016 - Only <b>{{countdown}}</b> days to go now.</h3>
     <div class="daysToGo">

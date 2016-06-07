@@ -442,6 +442,10 @@ td.first-column {
 .fixture-card.played .teams b {
   color:  #1967be;
 }
+.video-container {
+  max-width: 550px;
+  margin: auto;
+}
 div#dialog-container {
   position: absolute;
   top: 100%;
