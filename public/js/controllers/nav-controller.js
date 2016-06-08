@@ -2,22 +2,20 @@
   'use strict';
   angular.module('App')
     .controller('navController', ['$scope', 'localStorageFactory', function ($scope, localStorageFactory) {
+      // Get group data from localStorage to use for group dropdown navigation
       localStorageFactory.checkLocalStorage( function (data) {
-        console.log(data);
         $scope.groups = data.groups;
         $scope.showSubNav = function () {
-          console.log('yes');
           $scope.show = !$scope.show;
         };
       });
-      //$scope = window.scope ;
-      console.log($scope.groups);
-
     }]);
+
+    //Add Event listeners for controlling mobile navigation and dropdown menu
     var links = document.getElementsByTagName('li'),
         mainContainer = document.getElementsByClassName('main-container')[0],
         subnav;
-    console.log(mainContainer);
+
     function closeMainContainer (e) {
       mainContainer.className = "main-container";
     }

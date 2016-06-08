@@ -55,8 +55,6 @@
 
             $q.all([teams, fixtures, knockout]).then(function (responseArray) {
               responseArray.forEach(function (item, index) {
-                console.log(Object.keys(item.data)[0]);
-                console.log(item.data);
                 euroData[Object.keys(item.data)[0]] = item.data;
               });
 
@@ -115,7 +113,6 @@
               thisGroup.gamesPlayed += item.table.played;
             }
             if (thisGroup.gamesPlayed === 12 && !thisGroup.complete) {
-              console.log(groupName + " is now complete.", thisGroup.complete);
               thisGroup.complete = true;
               thisGroup.group.sort(function (a, b) {
                 if (a.table.points < b.table.points) return 1;
@@ -142,7 +139,6 @@
                 }
               }
               data.thirdPlaceArray.push(thisGroup.group[2]);
-              console.log(thisGroup.group[0], winnersCode, runnersUpCode);
             }
           });
           if(data.thirdPlaceArray.length === 6) {

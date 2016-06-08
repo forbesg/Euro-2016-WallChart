@@ -11,14 +11,13 @@
       var fixtures;
       var rounds = euroData.last16;
       var winningTeam;
-      console.log(rounds);
       var startDate = 1465588800000;
       var todaysDate = new Date();
       // var todaysDate = new Date(1466258400000);
       // var firstDay = new Date(1465556301000);
       // var todaysDate = firstDay;
-      // var todaysDate = new Date(1466899200000);
-      console.log(JSON.parse(localStorage.getItem('euroData')).last16.last16);
+      var dayBefore = new Date(1465430410000);
+      // var todaysDate = new Date(1467763210000);
       if (todaysDate > 1466726400000) {
         $scope.knockout = true;
       }
@@ -27,9 +26,8 @@
         today: [],
         tomorrow: []
       };
-      if (todaysDate >= 1466726400000) {
-        //rounds = JSON.parse(localStorage.getItem('euroData')).last16;
-        console.log(rounds);
+      // if (todaysDate >= 1466726400000) {
+      if (todaysDate >= 1465430410000) {
         for (var round in rounds) {
           if (rounds.hasOwnProperty(round)) {
             for (var game in rounds[round]) {
@@ -38,14 +36,16 @@
                 var date = new Date(rounds[round][game].date);
                 rounds[round][game].group = game;
                 console.log(date.getDate(), todaysDate.getDate())
-                if (date.getDate() === todaysDate.getDate()) {
-                  games.today.push(rounds[round][game]);
-                }
-                if (date.getDate() === (todaysDate.getDate() - 1)) {
-                  games.yesterday.push(rounds[round][game]);
-                }
-                if (date.getDate() === (todaysDate.getDate() + 1)) {
-                  games.tomorrow.push(rounds[round][game]);
+                if (date.getMonth() === todaysDate.getMonth()) {
+                  if (date.getDate() === todaysDate.getDate()) {
+                    games.today.push(rounds[round][game]);
+                  }
+                  if (date.getDate() === (todaysDate.getDate() - 1)) {
+                    games.yesterday.push(rounds[round][game]);
+                  }
+                  if (date.getDate() === (todaysDate.getDate() + 1)) {
+                    games.tomorrow.push(rounds[round][game]);
+                  }
                 }
               }
             }
@@ -149,7 +149,7 @@
         };
       }
 
-
+      // Process fixtures if we have not yet reached the knockout stages
       if (todaysDate < 1466726400000) {
         fixtures = euroData.fixtures.fixtures;
         for (var group in fixtures) {
@@ -216,7 +216,8 @@
       }
 
       $scope.countdown = null;
-      if (todaysDate < startDate) {
+      // Show countdown if more than one day before the tournament start date
+      if (todaysDate < dayBefore) {
         var countdown = (startDate - todaysDate) / (1000 * 60 * 60 * 24);
         var daysToGo = Math.round(countdown);
         $scope.countdown = daysToGo;

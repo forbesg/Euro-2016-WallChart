@@ -1,12 +1,12 @@
 (function () {
   'use strict';
   angular.module('App')
-    .controller('homeController', ['$scope', '$location', 'localStorageFactory', '$timeout', function ($scope, $location, localStorageFactory, $timeout) {
+    .controller('homeController', ['$scope', 'localStorageFactory', '$timeout', function ($scope, localStorageFactory, $timeout) {
       localStorageFactory.checkLocalStorage(function () {
         console.log('Local Storage is available');
       });
 
-      $scope.development = true;
+      $scope.development = false;
 
       $scope.confirmationRequired = false;
       $scope.confirmReset = function () {
@@ -23,7 +23,6 @@
         $scope.toast = "Data has been cleared";
         localStorageFactory.checkLocalStorage();
         $timeout(function () {
-          console.log('null toast');
           $scope.toast = null;
         }, 3000);
       };
