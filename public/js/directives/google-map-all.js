@@ -42,41 +42,44 @@
 
                 });
                 var markers = [];
-                stadiumArray.forEach(function (stadium, index) {
-                  var marker = new google.maps.Marker({
-                    position: {
-                      lat: parseFloat(stadium.coords.lat, 10),
-                      lng: parseFloat(stadium.coords.long, 10)
-                    },
-                    animation: google.maps.Animation.DROP,
-                    title: stadium.name,
-                    city: stadium.city,
-                    capacity: stadium.capacity
+                var initializeMarkerDrop = function () {
+                  stadiumArray.forEach(function (stadium, index) {
+                    var marker = new google.maps.Marker({
+                      position: {
+                        lat: parseFloat(stadium.coords.lat, 10),
+                        lng: parseFloat(stadium.coords.long, 10)
+                      },
+                      animation: google.maps.Animation.DROP,
+                      title: stadium.name,
+                      city: stadium.city,
+                      capacity: stadium.capacity
+                    });
+                    var contentString = "<div id='stadium-label' class='text-center'>" +
+                      "<img src='images/football-stadium.png' width='70'/>" +
+                      "<h4 style='font-weight: bold'>" +
+                      stadium.name +
+                      "</h4>" +
+                      "<h6 style='font-weight: bold'>" +
+                      stadium.city +
+                      "</h6>" +
+                      "<h6 style='font-weight: bold'>Club: " +
+                      stadium.club +
+                      "</h6>" +
+                      "<h6 style='font-weight: bold'>Capacity: " +
+                      stadium.capacity +
+                      "</h6>" +
+                      "</div>";
+                    var infoWindow = new google.maps.InfoWindow({
+                      content: contentString
+                    })
+                    // markers.push(marker);
+                    marker.addListener('click', function () {
+                      infoWindow.open(map, marker);
+                    });
+                    staggerMarker(marker, index * 500)
                   });
-                  var contentString = "<div id='stadium-label' class='text-center'>" +
-                    "<img src='images/football-stadium.png' width='70'/>" +
-                    "<h4 style='font-weight: bold'>" +
-                    stadium.name +
-                    "</h4>" +
-                    "<h6 style='font-weight: bold'>" +
-                    stadium.city +
-                    "</h6>" +
-                    "<h6 style='font-weight: bold'>Club: " +
-                    stadium.club +
-                    "</h6>" +
-                    "<h6 style='font-weight: bold'>Capacity: " +
-                    stadium.capacity +
-                    "</h6>" +
-                    "</div>";
-                  var infoWindow = new google.maps.InfoWindow({
-                    content: contentString
-                  })
-                  // markers.push(marker);
-                  marker.addListener('click', function () {
-                    infoWindow.open(map, marker);
-                  });
-                  staggerMarker(marker, index * 500)
-                });
+                  google.maps.event.clearInstanceListeners(map, 'tilesloaded');
+                };
 
                 function staggerMarker(marker, timeout) {
                   setTimeout(function () {
@@ -88,6 +91,8 @@
                 map.mapTypes.set('map_style', styledMap);
                 map.setMapTypeId('map_style');
                 // label.open(map, marker);
+                map.addListener('tilesloaded', initializeMarkerDrop);
+
               }
               initMap();
             }, function (err) {
