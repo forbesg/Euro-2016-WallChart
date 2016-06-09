@@ -33,7 +33,7 @@
     <h4>Todays Date: {{todaysDate | date}}</h4>
   </div>
 
-  <div class="col-md-4">
+  <div class="days-fixtures col-xs-12 col-md-4">
     <h4><b>Yesterdays Results</b></h4>
     <div class="" ng-if="fixtures.yesterday">
       <fixture-card ng-repeat="fixture in fixtures.yesterday track by $index" ng-if="!knockout"></fixture-card>
@@ -43,7 +43,7 @@
       <h3>No games yesterday</h3>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="days-fixtures col-xs-12 col-md-4">
     <h4><b>Todays Fixtures</b></h4>
     <div class="" ng-if="fixtures.today">
       <fixture-card ng-repeat="fixture in fixtures.today track by $index" ng-if="!knockout"></fixture-card>
@@ -53,7 +53,7 @@
       <h3>No games today</h3>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="days-fixtures col-xs-12 col-md-4">
     <h4><b>Tomorrows Fixtures</b></h4>
     <div class="" ng-if="fixtures.tomorrow">
       <fixture-card ng-repeat="fixture in fixtures.tomorrow track by $index" ng-if="!knockout"></fixture-card>

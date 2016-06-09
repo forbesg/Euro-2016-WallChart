@@ -17,7 +17,10 @@ header.main-header {
   max-width: 300px;
 }
 .time h6 {
-  color: #dadada;
+  color: #D6232A;
+}
+.logo-container {
+  padding: 20px 50px;
 }
 .sidebar {
   color: #fff;
@@ -51,6 +54,8 @@ nav .nav>li>a:hover, nav .nav>li>a:focus {
   background-color: #2C334C;
   text-decoration: none;
   color: #FFFFFF;
+  -webkit-transition: font-weight 0.3s, background-color .5s;
+  -moz-transition: font-weight 0.3s, background-color .5s;
   transition: font-weight 0.3s, background-color .5s;
 }
 /** Groups SubNav CSS **/
@@ -110,7 +115,48 @@ ul.subnav.true {
 ul.subnav {
     height: 0;
     overflow: hidden;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
     transition: height .5s;
+}
+nav ul.nav {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav ul.nav.true {
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  transform: translateX(-260px);
+}
+ul#subnav.slidesubnav {
+  position: absolute;
+  left: 260px;
+  right: -260px;
+  top: -60px;
+  bottom: 0;
+  height: 400px;
+  z-index: 15;
+}
+a#close-sub-nav-button {
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+}
+a#close-sub-nav-button:hover {
+  background-color: #37516D;
+}
+a#close-sub-nav-button img {
+  height: 100%;
+  width: 100%;
 }
 nav ul li ul {
   list-style: none;
@@ -405,7 +451,8 @@ td.first-column {
 }
 .fixture-card.played {
   background-color: #F1F1F1;
-  border-bottom: 1px solid #4165AB;
+  /*border-bottom: 1px solid #4165AB;*/
+  border-bottom: 5px solid #D6232A;
 }
 .fixture-card.played p.date {
   /*background-color: #013E81;*/
@@ -473,6 +520,14 @@ div#dialog-container::before {
   left: 50%;
   margin-left: -10px;
 }
+.days-fixtures {
+  margin: 30px 0;
+  text-align: center;
+}
+.days-fixtures h4 {
+
+}
+
 @media (min-width: 996px) {
   .quarters-container {
     padding: 80px 0;

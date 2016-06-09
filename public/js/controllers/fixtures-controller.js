@@ -13,11 +13,7 @@
       var winningTeam;
       var startDate = 1465588800000;
       var todaysDate = new Date();
-      // var todaysDate = new Date(1466258400000);
-      // var firstDay = new Date(1465556301000);
-      // var todaysDate = firstDay;
       var dayBefore = new Date(1465430410000);
-      // var todaysDate = new Date(1467763210000);
       if (todaysDate > 1466726400000) {
         $scope.knockout = true;
       }
@@ -26,16 +22,13 @@
         today: [],
         tomorrow: []
       };
-      // if (todaysDate >= 1466726400000) {
       if (todaysDate >= 1465430410000) {
         for (var round in rounds) {
           if (rounds.hasOwnProperty(round)) {
             for (var game in rounds[round]) {
-              console.log(rounds[round][game]);
               if (rounds[round].hasOwnProperty(game)) {
                 var date = new Date(rounds[round][game].date);
                 rounds[round][game].group = game;
-                console.log(date.getDate(), todaysDate.getDate())
                 if (date.getMonth() === todaysDate.getMonth()) {
                   if (date.getDate() === todaysDate.getDate()) {
                     games.today.push(rounds[round][game]);
@@ -67,12 +60,10 @@
           }
 
           function progressTeam(fixture, game, winningTeam) {
-            console.log(game);
             switch(game) {
               case 'game1':
                 knockoutData.last16.quarters.QF1.hometeam = winningTeam;
                 fixture.completed = true;
-                console.log('fired');
                 break;
               case 'game2':
                 knockoutData.last16.quarters.QF1.awayteam = winningTeam;

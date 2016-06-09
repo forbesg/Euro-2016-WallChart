@@ -14,6 +14,7 @@
     //Add Event listeners for controlling mobile navigation and dropdown menu
     var links = document.getElementsByTagName('li'),
         mainContainer = document.getElementsByClassName('main-container')[0],
+        nav = document.getElementById('main-nav'),
         subnav;
 
     function closeMainContainer (e) {

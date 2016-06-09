@@ -44,25 +44,33 @@
     <div class="sidebar">
       <div class="col-xs-12 text-center">
         <div class="row">
-          <h1>Euro 2016 Wallchart</h1>
+          <div class="logo-container">
+            <img src="images/logo-text.svg" alt="Euro 2016 Text Logo" class="img-responsive"/>
+          </div>
+
           <div class="time" ng-controller="timeController">
             <h6><b>Todays Date - {{time | date}}</b></h6>
           </div>
           <!-- <menu-icon></menu-icon> -->
           <nav ng-controller="navController">
-            <ul class="nav">
+            <ul id="main-nav" class="nav {{show}}">
               <li><a href="#/">Home</a></li>
+              <li><a href="#/fixtures">Todays Fixtures</a></li>
               <li>
-                <a ng-click="showSubNav()" class="show {{show}}">
+                <a ng-click="showSubNav()" class="show ">
                   Groups
                 </a>
-                <ul id="subnav" class="subnav {{show}}">
+                <!-- <ul id="subnav" class="subnav {{show}}">
                   <li><a href="#/groups">All Groups</a></li>
                   <li ng-repeat="(group, obj) in groups"><a ng-href="#/groups/{{group}}">{{group}}</a></li>
+                </ul> -->
+                <ul id="subnav" class="slidesubnav">
+                  <a ng-click="showSubNav()" id="close-sub-nav-button" ><img src="images/chevron.png" alt="chevron arrow" /></a>
+                  <li><a href="#/groups" ng-click="showSubNav()">All Groups</a></li>
+                  <li ng-repeat="(group, obj) in groups"><a ng-href="#/groups/{{group}}" ng-click="showSubNav()">{{group}}</a></li>
                 </ul>
               </li>
               <li><a href="#/knockout">Knockout</a></li>
-              <li><a href="#/fixtures">Fixtures</a></li>
               <li><a href="#/stadium">Stadia</a></li>
             </ul>
           </nav>
