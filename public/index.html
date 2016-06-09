@@ -7,10 +7,12 @@
     <meta name="description" content="A digital interactive wallchart for the Euro 2016 football championships">
     <title>Euro 2016 Wallchart</title>
     <meta property="og:url"           content="http://euro2016.bitballoon.com/" />
-    <meta property="og:type"          content="application" />
+    <meta property="og:type"          content="article" />
     <meta property="og:title"         content="Euro 2016 Wallchart" />
     <meta property="og:description"   content="A digital interactive wallchart for the Euro 2016 football championships" />
     <meta property="og:image"         content="http://euro2016.bitballoon.com/images/uefa_euro_2016.jpg" />
+    <meta property="fb:admins"         content="1069996489" />
+    <meta property="fb:app_id"         content="498627923661009" />
     <meta name="twitter:card"         content="summary_large_image" />
     <meta property="twitter:site"     content="@4beez" />
     <meta itemprop="name" content="Euro 2016 Wallchart">
@@ -35,7 +37,25 @@
     <script type="text/javascript" src="js/angular-animate.min.js"></script>
   </head>
   <body ng-app="App" ng-cloak>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '498627923661009',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <div class="main-container">
 
         <noscript>
@@ -88,12 +108,32 @@
           </nav>
         </div>
       </div>
+      <div class="col-xs-12">
+        <h6 class="text-center">Share the WallChart</h6>
+        <div id="social-buttons">
+          <a href="#" id="facebook-button" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=Check%20out%20the%20Euro%202016%20WallChart&url=http://euro2016.bitballoon.com/&via=4beez&hashtags=euro2016,wallchart" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=http://euro2016.bitballoon.com/&h1=en" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="google" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="copy">
         <h6>&copy; 2016 <a href="http://forbesg.github.io/" title="Forbes Gray | Personal Website" target="_blank">Forbes Gray</a></h6>
       </div>
     </footer>
+    <script type="text/javascript">
+      document.getElementById('facebook-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        FB.ui({
+          method: 'share',
+          href: 'http://euro2016.bitballoon.com/',
+        }, function(response){
+          console.log('Sucess - Shared to Facebook');
+        });
+      })
+    </script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/factory/groups-factory.js"></script>
     <script type="text/javascript" src="js/factory/local-storage-factory.js"></script>

@@ -204,6 +204,27 @@ div#menu-icon {
 div#menu-icon i:hover  {
   cursor: pointer;
 }
+/** Social Button in Sidebar **/
+div#social-buttons {
+  width: 160px;
+  margin: auto;
+}
+#social-buttons a {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  line-height:40px;
+  text-align:center;
+}
+#social-buttons a:hover {
+  text-shadow: 1px 1px 0 #000;
+}
+#social-buttons a i {
+  font-size: 30px;
+}
+
 /*@media (min-width: 768px) {*/
 @media (min-width: 996px) {
   .main-container {
