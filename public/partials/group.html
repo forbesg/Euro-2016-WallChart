@@ -29,7 +29,7 @@
           </header>
             <div>
               <p class="time">
-                {{fixture.date |  date:'H:mm'}}
+                {{fixture.date |  date:'H:mm':'0000'}}
               </p>
               <p class="stadium">
                 <a ng-href="#/stadium/{{fixture.stadium.name}}">{{fixture.stadium.name}}, {{fixture.stadium.city}}</a>
