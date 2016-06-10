@@ -224,6 +224,12 @@ div#social-buttons {
 #social-buttons a i {
   font-size: 30px;
 }
+.download-buttons {
+  margin: 20px 0;
+}
+.download-buttons a {
+  margin: 10px 0px;
+}
 
 /*@media (min-width: 768px) {*/
 @media (min-width: 996px) {
@@ -473,7 +479,7 @@ td.first-column {
 .fixture-card.played {
   background-color: #F1F1F1;
   /*border-bottom: 1px solid #4165AB;*/
-  border-bottom: 5px solid #D6232A;
+  /*border-bottom: 5px solid #D6232A;*/
 }
 .fixture-card.played p.date {
   /*background-color: #013E81;*/
