@@ -688,3 +688,29 @@ footer h6 a:hover {
   color: #fff;
   text-decoration: none;
 }
+
+/** Test Animations **/
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.main-view {
+  opacity: 1;
+}
+.main-view.ng-enter {
+  -webkit-animation: 0.5s fadeIn ease-in;
+  -moz-animation: 0.5s fadeIn ease-in;
+  animation: 0.5s fadeIn ease-in;
+}
+.main-view.ng-enter-active {
+  opacity: 1;
+}
