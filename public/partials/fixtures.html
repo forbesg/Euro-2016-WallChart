@@ -30,12 +30,12 @@
 <div class="row" ng-if="!countdown">
   <div class="col-xs-12">
     <h2>Fixtures</h2>
-    <h5><b>Todays Date: {{todaysDate | date : 'EEEE, MMMM d'}}</b></h5>
+    <h5><b>Today's Date: {{todaysDate | date : 'EEEE, MMMM d'}}</b></h5>
   </div>
 
   <div class="days-fixtures col-xs-12 col-md-4">
     <header class="fixture-header">
-      <h4><b>Yesterdays Results</b></h4>
+      <h4><b>Yesterday's Results</b></h4>
     </header>
     <div class="" ng-if="fixtures.yesterday">
       <fixture-card ng-repeat="fixture in fixtures.yesterday track by $index" ng-if="!knockout"></fixture-card>
@@ -47,7 +47,7 @@
   </div>
   <div class="days-fixtures col-xs-12 col-md-4">
     <header class="fixture-header">
-      <h4><b>Todays Fixtures</b></h4>
+      <h4><b>Today's Fixtures</b></h4>
     </header>
     <div class="" ng-if="fixtures.today">
       <fixture-card ng-repeat="fixture in fixtures.today track by $index" ng-if="!knockout"></fixture-card>
@@ -59,7 +59,7 @@
   </div>
   <div class="days-fixtures col-xs-12 col-md-4">
     <header class="fixture-header">
-      <h4><b>Tomorrows Fixtures</b></h4>
+      <h4><b>Tomorrow's Fixtures</b></h4>
     </header>
     <div class="" ng-if="fixtures.tomorrow">
       <fixture-card ng-repeat="fixture in fixtures.tomorrow track by $index" ng-if="!knockout"></fixture-card>
