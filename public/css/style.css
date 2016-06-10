@@ -702,6 +702,18 @@ footer h6 a:hover {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@-moz-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
 
 .main-view {
   opacity: 1;
@@ -714,3 +726,11 @@ footer h6 a:hover {
 .main-view.ng-enter-active {
   opacity: 1;
 }
+.main-view.ng-leave {
+  -webkit-animation: 0.2s fadeOut ease-in;
+  -moz-animation: 0.2s fadeOut ease-in;
+  animation: 0.2s fadeOut ease-in;
+}
+/*.main-view.ng-leave-active {
+  opacity: 0;
+}*/
