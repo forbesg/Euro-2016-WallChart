@@ -119,6 +119,25 @@
                 if (a.table.points > b.table.points) return -1;
                 if (a.table.goalsdiff < b.table.goalsdiff) return 1;
                 if (a.table.goalsdiff > b.table.goalsdiff) return -1;
+                // If equal on pts and GD compare the fixture between the two
+                var equalTeams = data.fixtures.fixtures[groupName].filter(function (fixture) {
+                  return fixture.awayteam === a.country || fixture.hometeam === a.country;
+                }).filter(function (fixture) {
+                  return fixture.awayteam === b.country || fixture.hometeam === b.country;
+                });
+                if (equalTeams[0].hometeam === a.country && equalTeams[0].score.hometeam > equalTeams[0].score.awayteam) {
+                  return -1;
+                }
+                if (equalTeams[0].hometeam === a.country && equalTeams[0].score.hometeam < equalTeams[0].score.awayteam) {
+                  return 1;
+                }
+                if (equalTeams[0].hometeam === b.country && equalTeams[0].score.hometeam > equalTeams[0].score.awayteam) {
+                  return 1;
+                }
+                if (equalTeams[0].hometeam === b.country && equalTeams[0].score.hometeam < equalTeams[0].score.awayteam) {
+                  return -1;
+                }
+                console.log(equalTeams);
                 return 0;
               });
               var last16 = data.last16.last16;
