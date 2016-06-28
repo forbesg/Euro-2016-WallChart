@@ -186,9 +186,105 @@
         };
       }
 
+      //Calculate winningTeam from fixture score
+      function winner (fixture, game, cb) {
+        if (fixture.score.hometeam > fixture.score.awayteam) {
+          cb(fixture, game, fixture.hometeam);
+        }
+        if (fixture.score.hometeam < fixture.score.awayteam) {
+          cb(fixture, game, fixture.awayteam);
+        }
+        if (fixture.score.hometeam === fixture.score.awayteam) {
+          fixture.penalties = true;
+        }
+      }
+
+      // Handle the winners in the final
+      function victors (team) {
+        console.log('And the winning team is ' + team.country + '!');
+        knockoutData.winners = team;
+        console.log(knockoutData);
+        localStorage.setItem('euroData', JSON.stringify(knockoutData));
+        $location.path('/winners');
+      }
+
+      function progressTeam(fixture, game, winningTeam) {
+        console.log(game);
+        switch(game) {
+          case 'game1':
+            knockoutData.last16.quarters.QF1.hometeam = winningTeam;
+            fixture.completed = true;
+            console.log('fired');
+            break;
+          case 'game2':
+            knockoutData.last16.quarters.QF1.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game3':
+            knockoutData.last16.quarters.QF2.hometeam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game4':
+            knockoutData.last16.quarters.QF2.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game5':
+            knockoutData.last16.quarters.QF3.hometeam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game6':
+            knockoutData.last16.quarters.QF3.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game7':
+            knockoutData.last16.quarters.QF4.hometeam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'game8':
+            knockoutData.last16.quarters.QF4.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'QF1':
+            knockoutData.last16.semis.SF1.hometeam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'QF2':
+            knockoutData.last16.semis.SF1.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'QF3':
+            knockoutData.last16.semis.SF2.hometeam = winningTeam;
+            fixture.completed = true;
+            break;2
+          case 'QF4':
+            knockoutData.last16.semis.SF2.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'SF1':
+            knockoutData.last16.finals.final.hometeam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'SF2':
+            knockoutData.last16.finals.final.awayteam = winningTeam;
+            fixture.completed = true;
+            break;
+          case 'final':
+            fixture.completed = true;
+            victors(winningTeam);
+            break;
+          default:
+            console.log('fallen all the way through the switch statement');
+            break;
+          }
+          fixture.penalties = undefined;
+          localStorage.setItem('euroData', JSON.stringify(knockoutData));
+        }
+
       // Handle Penalty pop-up
       $scope.penaltyUpdate = function (game, fixture, winningTeam) {
-        progressTeam (fixture, game, winningTeam);
+        game = game || fixture.group;
+        console.log(fixture);
+        progressTeam(fixture, game, winningTeam);
       };
       $scope.cancelPenaltyUpdate = function (fixture) {
         console.log('penalties cancelled!');
