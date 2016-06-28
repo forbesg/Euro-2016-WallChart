@@ -1,0 +1,27 @@
+<div>
+  <div class="" ng-if="!stadium">
+    <p class="text-warning">
+      Stadium was not found!!
+    </p>
+  </div>
+  <div class="row" ng-if="stadium">
+    <div class="stadium-view-container">
+      <google-map></google-map>
+      <div class="stadium-info-container">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+          <div class="stadium-info text-center">
+            <h2>{{stadium.name}}</h2>
+            <h4>{{stadium.city}}</h4>
+            <h4>Capacity: {{stadium.capacity}}</h4>
+            <h4>Home Club: {{stadium.club}}</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-6">
+          <div class="stadium-image">
+            <img ng-src="{{stadium.imageUrl}}" alt="{{stadium.name}}" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

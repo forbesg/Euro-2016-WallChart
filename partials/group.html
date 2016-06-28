@@ -1,0 +1,56 @@
+<div class="col-xs-12">
+  <header class="row">
+    <div class="logo text-center">
+      <img src="images/mascot.jpg" alt="Euro 2016 Mascot" />
+    </div>
+  </header>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <h1>{{groupName}}</h1>
+    <group-table></group-table>
+  </div>
+</div>
+<div class="row">
+  <!-- <div class="col-xs-12 col-md-6 col-lg-4">
+    <group-table></group-table>
+  </div> -->
+  <div class="col-xs-12 fixture-container">
+    <header class="fixture-header">
+      <h4><b>{{groupName}} Fixtures</b></h4>
+    </header>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4" ng-repeat="fixture in fixtures track by $index">
+        <div ng-class="{played: fixture.completed}" class="fixture-card" >
+          <header>
+            <p class="date">
+              {{fixture.date |  date:'EEEE d MMMM'}}
+            </p>
+          </header>
+            <div>
+              <p class="time">
+                {{fixture.date |  date:'H:mm':'0000'}}
+              </p>
+              <p class="stadium">
+                <a ng-href="#/stadium/{{fixture.stadium.name}}">{{fixture.stadium.name}}, {{fixture.stadium.city}}</a>
+              </p>
+              <p class="teams">
+                <b>{{fixture.hometeam}}</b>
+                <input ng-model="fixture.score.hometeam" ng-change="updateScore(fixture.score.hometeam, groupName, $index)" ng-if="!fixture.completed" />
+                <span ng-if="fixture.completed">{{fixture.score.hometeam}}</span>
+                v
+                <span ng-if="fixture.completed">{{fixture.score.awayteam}}</span>
+                <input ng-model="fixture.score.awayteam" ng-change="updateScore(fixture.score.awayteam, groupName, $index)" ng-if="!fixture.completed" />
+                <b>{{fixture.awayteam}}</b>
+              </p>
+            </div>
+            <div class="fixture-flag-border">
+              <div class=""></div>
+              <div class=""></div>
+              <div class=""></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,209 @@
+{
+  "last16": {
+    "game1": {
+      "hometeam": "A2",
+      "awayteam": "C2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Geoffroy-Guichard",
+        "city": "Saint-Étienne"
+      },
+      "date": 1466859600000
+    },
+    "game2": {
+      "hometeam": "D1",
+      "awayteam": "3BEF",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Felix Bollaert-Delelis",
+        "city": "Lens"
+      },
+      "date": 1466881200000
+    },
+    "game3": {
+      "hometeam": "B1",
+      "awayteam": "3ACD",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Parc des Princes",
+        "city": "Paris"
+      },
+      "date": 1466870400000
+    },
+    "game4": {
+      "hometeam": "F1",
+      "awayteam": "E2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stadium Municipal",
+        "city": "Toulouse"
+      },
+      "date": 1466967600000
+    },
+    "game5": {
+      "hometeam": "C1",
+      "awayteam": "3ABF",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Pierre-Mauroy",
+        "city": "Lille"
+      },
+      "date": 1466956800000
+    },
+    "game6": {
+      "hometeam": "E1",
+      "awayteam": "D2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade de France",
+        "city": "Paris"
+      },
+      "date": 1467043200000
+    },
+    "game7": {
+      "hometeam": "A1",
+      "awayteam": "3CDE",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Parc Olympique Lyonnais",
+        "city": "Lyon"
+      },
+      "date": 1466946000000
+    },
+    "game8": {
+      "hometeam": "B2",
+      "awayteam": "F2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Allianz Riviera",
+        "city": "Nice"
+      },
+      "date": 1467054000000
+    }
+  },
+
+  "quarters": {
+    "QF1": {
+      "hometeam": "Last16G1",
+      "awayteam": "Last16G2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Vélodrome",
+        "city": "Marseille"
+      },
+      "date": 1467316800000
+    },
+    "QF2": {
+      "hometeam": "Last16G3",
+      "awayteam": "Last16G4",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Pierre-Mauroy",
+        "city": "Lille"
+      },
+      "date": 	1467403200000
+    },
+    "QF3": {
+      "hometeam": "Last16G5",
+      "awayteam": "Last16G6",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Matmut Atlantique",
+        "city": "Bordeaux"
+      },
+      "date": 1467489600000
+    },
+    "QF4": {
+      "hometeam": "Last16G7",
+      "awayteam": "Last16G8",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade de France",
+        "city": "Paris"
+      },
+      "date": 	1467576000000
+    }
+  },
+
+  "semis": {
+    "SF1": {
+      "hometeam": "QF1",
+      "awayteam": "QF2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Parc Olympique Lyonnais",
+        "city": "Lyon"
+      },
+      "date": 	1467835200000
+    },
+    "SF2": {
+      "hometeam": "QF3",
+      "awayteam": "QF4",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade Vélodrome",
+        "city": "Marseille"
+      },
+      "date": 	1467921600000
+    }
+  },
+
+  "finals": {
+    "final": {
+      "hometeam": "SF1",
+      "awayteam": "SF2",
+      "score": {
+        "hometeam": null,
+        "awayteam": null
+      },
+      "stadium": {
+        "name": "Stade de France",
+        "city": "Paris"
+      },
+      "date": 	1468180800000
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+<div class="col-xs-12">
+  <header class="row">
+    <div class="logo text-center">
+      <img src="images/mascot.jpg" alt="Euro 2016 Mascot" />
+    </div>
+  </header>
+</div>
+<div class="col-xs-12">
+  <h1>Knockout time!!</h1>
+  <h4>Teams will be added automatically when the Group Stages complete.</h4>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+  <header class="fixture-header">
+    <h4><b>Last 16</b></h4>
+  </header>
+  <div class="" ng-repeat="(game, fixture) in fixtures">
+    <knockout-fixture-card></knockout-fixture-card>
+
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+  <header class="fixture-header">
+    <h4><b>Quarter-Finals</b></h4>
+  </header>
+  <div class="" ng-repeat="(game, fixture) in quarters">
+    <div class="quarters-container">
+      <knockout-fixture-card></knockout-fixture-card>
+    </div><!-- End .quarters-container -->
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+  <header class="fixture-header">
+    <h4><b>Semi-Finals</b></h4>
+  </header>
+  <div class="" ng-repeat="(game, fixture) in semis">
+    <div class="semis-container">
+      <knockout-fixture-card></knockout-fixture-card>
+    </div>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+  <header class="fixture-header">
+    <h4><b>Final</b></h4>
+  </header>
+  <div class="" ng-repeat="(game, fixture) in finals">
+    <div class="finals-container">
+      <knockout-fixture-card></knockout-fixture-card>
+    </div>
+  </div>
+</div>

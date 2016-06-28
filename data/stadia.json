@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Stade de France",
+    "city": "Paris",
+    "club": "None",
+    "imageUrl": "http://www.parisdigest.com/photos/stade_de_france_arena_in_paris.jpg",
+    "coords": {
+      "lat": "48.924459",
+      "long": "2.3579758"
+    },
+    "capacity": "81,338"
+  },
+  {
+    "id": 2,
+    "name": "Stade Vélodrome",
+    "city": "Marseille",
+    "club": "Olympique de Marseille",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/velodrome_front2.jpg",
+    "coords": {
+      "lat": "43.269827",
+      "long": "5.3936986"
+    },
+    "capacity": "67,000"
+  },
+  {
+    "id": 3,
+    "name": "Parc Olympique Lyonnais",
+    "city": "Lyon",
+    "club": "Olympique Lyonnais",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/parcolympique_front.jpg",
+    "coords": {
+      "lat": "45.7651056",
+      "long": "4.9820209"
+    },
+    "capacity": "59,000"
+  },
+  {
+    "id": 4,
+    "name": "Stade Pierre-Mauroy",
+    "city": "Lille",
+    "club": "Lille OSC",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/grandstadelille_front.jpg",
+    "coords": {
+      "lat": "50.6119667",
+      "long": "3.1304899"
+    },
+    "capacity": "50,000"
+  },
+  {
+    "id": 5,
+    "name": "Parc des Princes",
+    "city": "Paris",
+    "club": "Paris Saint-Germain FC",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/parcdesprinces_front1.jpg",
+    "coords": {
+      "lat": "48.8414356",
+      "long": "2.2530487"
+    },
+    "capacity": "45,000"
+  },
+  {
+    "id": 6,
+    "name": "Matmut Atlantique",
+    "city": "Bordeaux",
+    "club": "Girondins de Bordeaux",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/matmut_front.jpg",
+    "coords": {
+      "lat": "44.8973903",
+      "long": "-0.5615416"
+    },
+    "capacity": "42,115"
+  },
+  {
+    "id": 7,
+    "name": "Stade Geoffroy-Guichard",
+    "city": "Saint-Étienne",
+    "club": "Saint-Étienne",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/geoffroyguichard_front1.jpg",
+    "coords": {
+      "lat": "45.4607318",
+      "long": "4.3901162"
+    },
+    "capacity": "41,500"
+  },
+  {
+    "id": 8,
+    "name": "Allianz Riviera",
+    "city": "Nice",
+    "club": "OGC Nice",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/allianzriviera_front2.jpg",
+    "coords": {
+      "lat": "43.7050712",
+      "long": "7.1917565"
+    },
+    "capacity": "35,624"
+  },
+  {
+    "id": 9,
+    "name": "Stade Felix Bollaert-Delelis",
+    "city": "Lens",
+    "club": "RC Lens",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/bollaert_front1.jpg",
+    "coords": {
+      "lat": "50.4328611",
+      "long": "2.8149319"
+    },
+    "capacity": "38,223"
+  },
+  {
+    "id": 10,
+    "name": "Stadium Municipal",
+    "city": "Toulouse",
+    "club": "Toulouse FC",
+    "imageUrl": "http://www.stadiumguide.com/wp-content/uploads/stadiumtoulouse_front1.jpg",
+    "coords": {
+      "lat": "43.5832972",
+      "long": "1.434048"
+    },
+    "capacity": "35,472"
+  }
+]

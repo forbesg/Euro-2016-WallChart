@@ -1,0 +1,75 @@
+<div class="" ng-if="development">
+  <div class="alert alert-warning text-center">
+    <p>During development the local data can conflict with the code.</p>
+    <p>If this happens you can reset the local data by clicking the reset button below.</p>
+    <br>
+    <button class="btn btn-default" ng-click="confirmReset()">Reset Local Data</button>
+  </div>
+</div>
+<div class="row banner">
+  <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+    <img src="images/UEFA_euro_2016.jpg" alt="Euro 2016 Banner" class="img-responsive" />
+  </div>
+</div>
+<div class="col-xs-12 text-center">
+  <div class="row">
+    <h2>About the Euro 2016 Wallchart</h2>
+    <h4>The Euro 2016 Wallchart allows you to update the scores of the tournament
+      as it unfolds</h4>
+    <p>
+      On first load, data is loaded into your browsers local storage. This means
+      that you can complete the wallchart and every time you open it in the browser
+      again your data will have been saved.
+    </p>
+    <p>
+      From the <b>fixtures page</b> you can find all the fixtures from the current day,
+      plus the previous and next days fixtures.
+    </p>
+    <p>
+      On the Groups page you will see all the group tables for the group stages.
+      As you complete the scores on the fixtures page the tables will update all the
+      information for you.
+    </p>
+    <p>
+      Click on the Group table title to take you to a view of that particular Groups
+      table and fixtures or access from the Groups dropdown menu in the main navigation.
+    </p>
+  </div>
+  <!-- <div class="download-buttons">
+    <h4>Download the Desktop App for Linux</h4>
+    <a href="https://www.dropbox.com/s/085wxv496qgui64/euro-2016-wallchart_1.0.0_i386.deb?dl=1" class="btn btn-primary btn-sm hidden-xs hidden-sm">Download 32-bit Linux App (.deb)</a>
+    <a href="https://www.dropbox.com/s/2mvuqo3zbs2ks5v/euro-2016-wallchart_1.0.0_amd64.deb?dl=1" class="btn btn-primary btn-sm hidden-xs hidden-sm">Download 64-bit Linux App (.deb)</a>
+  </div> -->
+  <hr>
+</div>
+<div class="col-xs-12">
+  <div class="row">
+    <h4>Reset Locally Stored Data..</h4>
+    <button type="button" name="button" class="btn btn-default" ng-click="confirmReset()">Reset All Stored Data</button>
+    <h6 class="text-danger">WARNING!! - Deleting data cannot be undone</h6>
+    <div class="model-background" ng-if="confirmationRequired"></div>
+    <div class="delete-confirmation" ng-if="confirmationRequired" >
+      <div class="">
+        <h4><strong>Data Deletion | Confirmation</strong></h4>
+        <p>
+          You have requested to delete all of your stored data.
+        </p>
+        <p>
+          This cannot be undone.
+        </p>
+        <p>
+          Are you sure you want to delete
+        </p>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary" ng-click="closeConfirmation()">Cancel</button>
+          <button type="button" class="btn btn-warning" ng-click="confirmDelete()">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast" ng-if="toast">
+        <p>
+          The data has been deleted
+        </p>
+    </div>
+  </div>
+</div>

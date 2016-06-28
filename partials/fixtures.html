@@ -1,0 +1,72 @@
+<div class="col-xs-12">
+  <header class="row">
+    <div class="logo text-center">
+      <img src="images/mascot.jpg" alt="Euro 2016 Mascot" />
+    </div>
+  </header>
+</div>
+<div ng-if="countdown" class="row text-center">
+
+  <div class="col-xs-12">
+    <div class="video-container">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/UkpjphDhrqs" class="embed-responsive-item"></iframe>
+      </div>
+    </div>
+    <h1>Patience, Patience, Patience.</h1>
+    <h3>We are getting closer to the start of Euro 2016 - Only <b>{{countdown}}</b> days to go now.</h3>
+    <div class="daysToGo">
+      <p>
+        {{countdown}}
+      </p>
+    </div>
+    <h4>
+      <b>Days <br />
+      To <br />
+      Go!!</b>
+    </h4>
+  </div>
+</div>
+<div class="row" ng-if="!countdown">
+  <div class="col-xs-12">
+    <h2>Fixtures</h2>
+    <h5><b>Today's Date: {{todaysDate | date : 'EEEE, MMMM d'}}</b></h5>
+  </div>
+
+  <div class="days-fixtures col-xs-12 col-md-4">
+    <header class="fixture-header">
+      <h4><b>Yesterday's Results</b></h4>
+    </header>
+    <div class="" ng-if="fixtures.yesterday">
+      <fixture-card ng-repeat="fixture in fixtures.yesterday track by $index" ng-if="!knockout"></fixture-card>
+      <knockout-fixture-card ng-repeat="fixture in fixtures.yesterday track by $index" ng-if="knockout"></knockout-fixture-card>
+    </div>
+    <div class="" ng-if="!fixtures.yesterday">
+      <h3>No games yesterday</h3>
+    </div>
+  </div>
+  <div class="days-fixtures col-xs-12 col-md-4">
+    <header class="fixture-header">
+      <h4><b>Today's Fixtures</b></h4>
+    </header>
+    <div class="" ng-if="fixtures.today">
+      <fixture-card ng-repeat="fixture in fixtures.today track by $index" ng-if="!knockout"></fixture-card>
+      <knockout-fixture-card ng-repeat="fixture in fixtures.today track by $index" ng-if="knockout"></knockout-fixture-card>
+    </div>
+    <div class="" ng-if="!fixtures.today">
+      <h3>No games today</h3>
+    </div>
+  </div>
+  <div class="days-fixtures col-xs-12 col-md-4">
+    <header class="fixture-header">
+      <h4><b>Tomorrow's Fixtures</b></h4>
+    </header>
+    <div class="" ng-if="fixtures.tomorrow">
+      <fixture-card ng-repeat="fixture in fixtures.tomorrow track by $index" ng-if="!knockout"></fixture-card>
+      <knockout-fixture-card ng-repeat="fixture in fixtures.tomorrow track by $index" ng-if="knockout"></knockout-fixture-card>
+    </div>
+    <div class="" ng-if="!fixtures.tomorrow">
+      <h3>No games tomorrow</h3>
+    </div>
+  </div>
+</div>

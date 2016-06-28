@@ -1,0 +1,29 @@
+<div ng-class="{played: fixture.completed}" class="fixture-card" >
+  <header>
+    <p class="date">
+      {{fixture.group}}
+    </p>
+  </header>
+  <div>
+    <p class="time">
+      {{fixture.date |  date:'H:mm':'0000'}}
+    </p>
+    <p class="stadium">
+      <a ng-href="#/stadium/{{fixture.stadium.name}}">{{fixture.stadium.name}}, {{fixture.stadium.city}}</a>
+    </p>
+    <p class="teams">
+      <b>{{fixture.hometeam}}</b>
+      <input ng-model="fixture.score.hometeam" ng-change="updateScore(fixture)" ng-if="!fixture.completed" />
+      <span ng-if="fixture.completed">{{fixture.score.hometeam}}</span>
+      v
+      <span ng-if="fixture.completed">{{fixture.score.awayteam}}</span>
+      <input ng-model="fixture.score.awayteam" ng-change="updateScore(fixture)" ng-if="!fixture.completed" />
+      <b>{{fixture.awayteam}}</b>
+    </p>
+  </div>
+  <div class="fixture-flag-border">
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+  </div>
+</div>
