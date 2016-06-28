@@ -2,8 +2,9 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 
+/*
 app.get('/api/v1/teams', function (req, res) {
   var teams = fs.readFileSync(__dirname + '/data/teams.json', 'utf8', function (err, data) {
     if (err) {
@@ -66,7 +67,7 @@ app.get('/api/v1/fixtures', function (req, res) {
   res.send(fixtures);
 
 });
-
+*/
 
 app.listen(3000, function () {
   console.log('serving on port 3000');
