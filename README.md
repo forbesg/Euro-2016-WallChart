@@ -13,3 +13,5 @@ looking at creating a Chrome App which will allow the use of chrome.storage API 
 be synced between chrome browsers that the user is signed in to.
 
 The application is built with Angular in a hurry.
+
+View the application here [http://forbesg.github.io/Euro-2016-WallChart](http://forbesg.github.io/Euro-2016-WallChart)
